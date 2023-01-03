@@ -1,0 +1,27 @@
+﻿<Window x:Class="_03_01_2022_Users_Registrstions.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_03_01_2022_Users_Registrstions"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Label Name="Label_User_Name" Content="User Name" FontSize="26" Grid.RowSpan="1" HorizontalAlignment="Center"/>
+        <TextBox Name="_1_Username" Text="User Name"  Grid.Row="1" FontSize="26" TextAlignment="Center" TextChanged="_1_Username_TextChanged"/>
+        <Label Name="Label_Parol" Content="Parol" Grid.Row="2" FontSize="26" HorizontalAlignment="Center"/>
+        <TextBox Name="_2_Parol" TextWrapping="Wrap" Text="Input Parol" Grid.Row="3" FontSize="26" TextAlignment="Center" TextChanged="_2_Parol_TextChanged_1" />
+        <Label Name="Label_User_Post_Name" Content="User Post Name" FontSize="26" HorizontalAlignment="Center" Grid.Row="4"/>
+        <TextBox Name="_3_Post" TextWrapping="Wrap" Text="Input Post" Grid.Row="5" FontSize="26" TextAlignment="Center" TextChanged="_3_Post_TextChanged" />
+        <Button Name="Registrations" Content="Регистрация" Grid.Row="6" Margin="100,10,100,10" FontSize="20" Click="Registrations_Click" />
+    </Grid>
+</Window>
